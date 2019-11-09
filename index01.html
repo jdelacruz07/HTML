@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Primer Progama HTML</title>
+    <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <h1 id="cabecera"> Hola Mundo</h1>
+
+    <div id="square" style="width:100px; height:100px; background-color: rgba(255, 68, 0, 0.849)">
+    </div>
+
+    <input id="color_blue" type="radio" name="color " onchange="changeDiv()">blue
+    <input id="color_rojo" type="radio" name="color " onchange="changeDiv()">red
+    <br><br>
+
+    <input id="nameUser" type="text" placeholder="Escibe tu nombre" value="">
+    <button type="button" onclick="showUser()"> Show my name </button>
+
+    <input id="lastName" type="text" placeholder="Escibe tu apellido" value="">
+    <button type="button" onclick="showLastName()"> Show last name </button>
+    <br>
+
+    <form action="addUser.html" onsubmit="return verifyData()">
+        <p>Su nombre <input id="nameForm" name="name" /></p>
+        <p>Su apellido: <input id="lastNameForm" name="lastName" /></p>
+        <p>Su e-mail: <input id="emailForm" name="email" /></p>
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
