@@ -1,13 +1,15 @@
-function changeDiv() {
-    var color_azul = document.getElementById("square");
+"use strict";
 
-    if (color_azul.checked) {
+function changeDiv() {
+    var colorBlue = document.getElementById("square");
+
+    if (colorBlue.checked) {
         document.getElementById("square").style.backgroundColor = "blue";
     } else {
         document.getElementById("square").style.backgroundColor = "red";
     }
 
-    if (color_rojo.checked) {
+    if (colorRed.checked) {
         document.getElementById("square").style.backgroundColor = "red";
     } else {
         document.getElementById("square").style.backgroundColor = "blue";
@@ -22,7 +24,7 @@ function showUser() {
         alert("Ingresa un nombre");
     } else {
         alert("tu nombre es " + user);
-        document.getElementById("cabecera").innerHTML = "Hola " + user + "!";
+        document.getElementById("mainHeader").innerHTML = "Hola " + user + "!";
     }
 }
 
@@ -34,7 +36,7 @@ function showLastName() {
         alert("Ingresa un apellido");
     } else {
         alert("tu apellido es " + lastName);
-        document.getElementById("cabecera").innerHTML = "Hola " + lastName + "!";
+        document.getElementById("mainHeader").innerHTML = "Hola " + lastName + "!";
     }
 }
 
@@ -42,33 +44,33 @@ function change2blue() {
     var colorActual = document.getElementById("lastName").style.backgroundColor;
 
     if (colorActual == "blue") {
-        document.getElementById("apellido_1").style.backgroundColor = "beige";
+        document.getElementById("lastName").style.backgroundColor = "beige";
     } else {
-        document.getElementById("apellido_1").style.backgroundColor = "blue";
+        document.getElementById("lastName").style.backgroundColor = "blue";
     }
 }
 
 function verifyData() {
-    var validacion = true;
+    var validation = true;
     var name = document.getElementById("nameForm")
     var lastName = document.getElementById("lastNameForm")
     var email = document.getElementById("emailForm")
 
     if (name.value == null || name.value == "") {
-        validacion = false;
+        validation = false;
         name.style.backgroundColor = "red";
     }
 
     if (lastName.value == null || lastName.value == "") {
-        validacion = false;
+        validation = false;
         lastName.style.backgroundColor = "yellow";
     }
 
     if (email.value == null || email.value == "") {
-        validacion = false;
+        validation = false;
         email.style.backgroundColor = "yellow";
     }
 
-    return validacion;
+    return validation;
 }
 
