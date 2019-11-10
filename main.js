@@ -1,6 +1,6 @@
 "use strict";
 
-function changeDiv() {
+function changeColor() {
     var colorBlue = document.getElementById("square");
 
     if (colorBlue.checked) {
